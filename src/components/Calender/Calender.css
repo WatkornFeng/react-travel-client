@@ -1,0 +1,36 @@
+/*
+// --gunmetal:            #142B2Fff
+// --dark-slate-gray:     #355154ff
+// --ash-gray:            #A9B9B7ff
+// --silver:              #BAB7ACff
+// --timberwolf:          #D0D1C6ff
+*/
+
+.rdp {
+  --rdp-cell-size: 40px; /* Size of the day cells. */
+  --rdp-caption-font-size: 22px; /* Font size for the caption labels. */
+  --rdp-accent-color: #142b2fff; /* Accent color for the background of selected days. */
+  --rdp-background-color: #a9b9b7ff; /* Background color for the hovered/focused elements. */
+  --rdp-accent-color-dark: #3003e1; /* Accent color for the background of selected days (to use in dark-mode). */
+  --rdp-background-color-dark: #180270; /* Background color for the hovered/focused elements (to use in dark-mode). */
+  --rdp-outline: 2px solid var(--rdp-accent-color); /* Outline border for focused elements */
+  --rdp-outline-selected: 3px solid var(--rdp-accent-color); /* Outline border for focused _and_ selected elements */
+  --rdp-selected-color: #a9b9b7ff; /* Color of selected day text */
+
+  margin: 1em;
+  font-family: "Roboto", sans-serif;
+}
+
+.rdp-day_today:not(.rdp-day_outside) {
+  font-weight: bold;
+  color: #d81111;
+}
+
+@media only screen and (max-width: 720px) {
+  .rdp-months {
+    flex-direction: column;
+  }
+  .rdp-month {
+    margin: 1rem 1em;
+  }
+}
