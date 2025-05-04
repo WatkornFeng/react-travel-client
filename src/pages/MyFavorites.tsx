@@ -26,7 +26,6 @@ function MyFavorites() {
   } = useGetMyFavoriteQuery(token!, {
     skip: !token, // <-- skip until token ready
   });
-  console.log(myFavorites);
 
   useEffect(() => {
     const fetchToken = async () => {

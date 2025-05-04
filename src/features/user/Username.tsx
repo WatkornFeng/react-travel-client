@@ -60,7 +60,7 @@ function Username() {
             ))}
           </Menu>
           <Typography color="primary" fontWeight="bold">
-            {user.name}
+            {user.name?.split("@")[0]}
           </Typography>
         </>
       )}
