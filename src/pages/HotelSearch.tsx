@@ -66,7 +66,7 @@ function HotelSearch() {
     provinceName: placeParam?.trim() || "",
   });
 
-  const [openWarningModal, isOpenWarningModal] = useState(false);
+  const [_, isOpenWarningModal] = useState(false);
   const hotels = getHotels?.data?.hotels ?? [];
 
   const isEmpty = hotels.length === 0;
