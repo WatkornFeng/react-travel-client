@@ -168,10 +168,10 @@ function HotelSearch() {
             >
               Hotels in {getProvince?.province ? getProvince.province.name : ""}
             </HeroTypography>
-            {getHotels && (
+            {getProvince && (
               <Typography color="White">
-                {getHotels.length} {getHotels.length > 1 ? "hotels" : "hotel"}{" "}
-                avaliable
+                {getProvince.countHotel}{" "}
+                {getProvince.countHotel > 1 ? "hotels" : "hotel"} avaliable
               </Typography>
             )}
           </Box>

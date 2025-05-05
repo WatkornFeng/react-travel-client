@@ -9,6 +9,7 @@ export interface IGetProvincesResponse {
 export interface IGetProvinceResponse {
   status: string;
   province: Province;
+  countHotel: number;
 }
 export interface IGetSixProvincesResponse {
   status: string;
